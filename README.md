@@ -1,3 +1,9 @@
+只编译TUN2SOCKS和UDPGW  
+mkdir build   
+cd build  
+cmake .. -G "Visual Studio 16 2019" -DBUILD_NOTHING_BY_DEFAULT=1 -DBUILD_TUN2SOCKS=1 -DBUILD_UDPGW=1 -DCMAKE_INSTALL_PREFIX=%cd%\..\install-dir  
+cmake --build . --config Release --target install  
+生成文件在:install-dir\bin\  
 # BadVPN
 
 ## Introduction
